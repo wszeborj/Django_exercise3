@@ -134,3 +134,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'dashboard'
+
+# # email stored in set_emails in form log
+# EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
+
+# email displayed in console
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+EMAIL_FILE_PATH = BASE_DIR / "sent_emails"
